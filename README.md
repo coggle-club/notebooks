@@ -16,6 +16,12 @@
 
 ### 自然语言处理
 
+- [NLP-Pytorch基础](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/NLP-Pytorch%E5%9F%BA%E7%A1%80.ipynb)
+- [文本分类-FastText模型-英文分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E8%8B%B1%E6%96%87%E5%88%86%E7%B1%BB.ipynb)
+- [文本分类-FastText模型-中文分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E5%88%86%E7%B1%BB.ipynb)
+- [文本分类-FastText模型-中文进阶](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E8%BF%9B%E9%98%B6.ipynb)
+- [文本分类-TextCNN模型](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-TextCNN%E6%A8%A1%E5%9E%8B.ipynb)
+- [文本分类-BILSTM模型](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-BILSTM%E6%A8%A1%E5%9E%8B.ipynb)
 - [无监督句子编码(Mean/Max/TFIDF/SIF Pooling)](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%8F%A5%E5%AD%90%E7%BC%96%E7%A0%81.ipynb)
 - [transformer基础](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/transformer%E5%9F%BA%E7%A1%80.ipynb)
 - [BERT文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-cls-example.ipynb)
