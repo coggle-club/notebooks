@@ -31,6 +31,11 @@
 - [BERT多项选择](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-choice-example.ipynb)
 - [BERT Mask预训练](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-mlm-example.ipynb)
 
+## 环境说明
+
+- 代码使用Python3 + Notebook编写，如无标注深度学习框架均为Pytorch
+- 部分代码需要GPU，推荐11GB以上配置
+
 ## 关于我们
 
 - 公众号：Coggle数据科学
