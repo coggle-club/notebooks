@@ -38,7 +38,6 @@
 
 ## 关于我们
 
-- 公众号：Coggle数据科学
 ![](https://coggle.club/assets/img/coggle_qrcode.jpg)
 
 - 竞赛日历：https://coggle.club/
