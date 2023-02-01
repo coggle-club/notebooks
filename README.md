@@ -1,4 +1,4 @@
-# Notebook教程案例
+<h1>数据科学教程案例</h1>
 
 ## 目录
 
@@ -14,6 +14,16 @@
   - 自定义数据集训练
 - 【TODO】时序数据划分方法
 - 【TODO】时序特征工程
+
+### Pytorch与深度学习
+- 【TODO】Pytorch线性回归
+- 【TODO】Pytorch搭建CNN模型
+- 【TODO】Pytorch自定义数据集
+
+### Paddle与深度学习
+- 【TODO】Paddle线性回归
+- 【TODO】Paddle搭建CNN模型
+- 【TODO】Paddle自定义数据集
 
 ### 可视化库
 
@@ -60,7 +70,19 @@
 
 - 【TODO】手写字体GAN/CGAN/ACGAN
 
-### PaddlePaddle
+### 图查询与图分析
+
+### 大数据中间件
+
+#### MySQL
+
+#### Spark
+
+#### Flink
+
+#### Kafka
+
+#### Redis
 
 ## 环境说明
 
