@@ -2,11 +2,18 @@
 
 ## 目录
 
-### 机器学习库
+### 机器学习
 
 - [sklearn迭代训练](https://github.com/coggle-club/notebooks/blob/main/notebooks/sklearn%E8%BF%AD%E4%BB%A3%E8%AE%AD%E7%BB%83.ipynb)
 - [numexpr教程](https://github.com/coggle-club/notebooks/blob/main/notebooks/numexpr%E6%95%99%E7%A8%8B.ipynb)
 - [时间序列库](https://github.com/coggle-club/notebooks/blob/main/notebooks/%E6%97%B6%E9%97%B4%E5%BA%8F%E5%88%97%E5%BA%93.ipynb)
+- 【TODO】sklearn模型加速
+- 【TODO】XGBoost/LightGBM/CatBoost
+  - 分类任务/回归任务/排序任务
+  - 自定义评价函数和目标函数 
+  - 自定义数据集训练
+- 【TODO】时序数据划分方法
+- 【TODO】时序特征工程
 
 ### 可视化库
 
@@ -15,6 +22,8 @@
 - [Bokeh画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Bokeh%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
 
 ### 自然语言处理
+
+#### NLP与深度学习
 
 - [NLP-Pytorch基础](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/NLP-Pytorch%E5%9F%BA%E7%A1%80.ipynb)
 - [文本分类-FastText模型-英文分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E8%8B%B1%E6%96%87%E5%88%86%E7%B1%BB.ipynb)
@@ -31,10 +40,33 @@
 - [BERT多项选择](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-choice-example.ipynb)
 - [BERT Mask预训练](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-mlm-example.ipynb)
 
+#### NLP与机器学习
+
+- 【TODO】TextRank中文关键词识别 + 文本摘要
+- 【TODO】Rake中文关键词识别 + 文本摘要
+
+
+### 计算机视觉
+
+- 【TODO】图像检索：颜色直方图
+- 【TODO】图像检索：局部SIFT关键点 + 词袋编码/VLDA/FV
+- 【TODO】图像检索：卷积特征/Vit特征
+- 【TODO】图像细粒度检索：电商商品识别
+- 【TODO】图像自编码器
+- 【TODO】图像变分自编码器
+- 【TODO】图像MAE自监督训练
+
+### 生成对抗网络
+
+- 【TODO】手写字体GAN/CGAN/ACGAN
+
+### PaddlePaddle
+
 ## 环境说明
 
-- 代码使用Python3 + Notebook编写，如无标注深度学习框架均为Pytorch
-- 部分代码需要GPU，推荐11GB以上配置
+- 代码使用Py3 Notebook编写，如无标注深度学习框架均为Pytorch。
+- 代码数据集部分需要额外下载，如需要请关注下面公众号询问。
+- 部分代码需要GPU，推荐11GB或以上配置
 
 ## 关于我们
 
