@@ -84,6 +84,10 @@
 
 #### Redis
 
+## 其他代码
+
+- [m3u8在线视频下载](https://github.com/coggle-club/notebooks/blob/main/notebooks/m3u8%E5%9C%A8%E7%BA%BF%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD.ipynb)
+
 ## 环境说明
 
 - 代码使用Py3 Notebook编写，如无标注深度学习框架均为Pytorch。
