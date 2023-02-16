@@ -49,6 +49,7 @@
 - [BERT文本问答](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-qa-example.ipynb)
 - [BERT多项选择](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-choice-example.ipynb)
 - [BERT Mask预训练](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-mlm-example.ipynb)
+- [BERT + Prompt文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-prompt-cls.ipynb)
 
 #### NLP与机器学习
 
