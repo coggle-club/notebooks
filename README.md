@@ -2,10 +2,24 @@
 
 ## 目录
 
+
+
 ### Coggle竞赛学习
 
 - [24年5月：意图识别](https://github.com/coggle-club/notebooks/tree/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB)
-
+  - [数据集读取](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/01-%E5%AF%B9%E8%AF%9D%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB.ipynb)
+  - [关键词识别与正则匹配](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/02-%E6%AD%A3%E5%88%99%E5%85%B3%E9%94%AE%E8%AF%8D.ipynb)
+  - [TFIDF文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/03-TFIDF%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
+  - [词向量训练与加载](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/04-%E8%AF%8D%E5%90%91%E9%87%8F%E8%AE%AD%E7%BB%83%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb)
+  - [FastText文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/05-FastText%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
+  - [LSTM文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/06-LSTM%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
+  - [TextCNN文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/07-TextCNN%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
+  - [BERT文本分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/08-BERT%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
+  - [BERT高效微调](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/09-BERT%E9%AB%98%E6%95%88%E5%BE%AE%E8%B0%83.ipynb)
+  - [T5加载与使用](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/10-T5%E5%8A%A0%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb)
+  - [T5微调与分类](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/11-T5%E5%BE%AE%E8%B0%83%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
+  - [大模型Qwen加载与使用](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/12-Qwen%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8A%A0%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb)
+  - [大模型Qwen微调](https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/13-Qwen%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb)
 ### 可视化库
 
 - [Pandas画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Pandas%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
