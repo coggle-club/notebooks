@@ -2,6 +2,12 @@
 
 ## 目录
 
+### 可视化库
+
+- [Pandas画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Pandas%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
+- [Seaborn画图案例](https://github.com/coggle-club/notebooks/blob/main/notebooks/Seaborn%E7%94%BB%E5%9B%BE%E6%A1%88%E4%BE%8B.ipynb)
+- [Bokeh画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Bokeh%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
+
 ### 机器学习
 
 - [sklearn迭代训练](https://github.com/coggle-club/notebooks/blob/main/notebooks/sklearn%E8%BF%AD%E4%BB%A3%E8%AE%AD%E7%BB%83.ipynb)
@@ -25,11 +31,7 @@
 - 【TODO】Paddle搭建CNN模型
 - 【TODO】Paddle自定义数据集
 
-### 可视化库
 
-- [Pandas画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Pandas%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
-- [Seaborn画图案例](https://github.com/coggle-club/notebooks/blob/main/notebooks/Seaborn%E7%94%BB%E5%9B%BE%E6%A1%88%E4%BE%8B.ipynb)
-- [Bokeh画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Bokeh%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
 
 ### 自然语言处理
 
