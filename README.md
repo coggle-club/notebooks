@@ -2,6 +2,10 @@
 
 ## 目录
 
+### Coggle竞赛学习
+
+- [24年5月：意图识别](https://github.com/coggle-club/notebooks/tree/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB)
+
 ### 可视化库
 
 - [Pandas画图技能](https://github.com/coggle-club/notebooks/blob/main/notebooks/Pandas%E7%94%BB%E5%9B%BE%E6%8A%80%E8%83%BD.ipynb)
