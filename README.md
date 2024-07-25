@@ -59,7 +59,7 @@
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E8%BF%9B%E9%98%B6.ipynb">文本分类-FastText模型-中文进阶</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-TextCNN%E6%A8%A1%E5%9E%8B.ipynb">文本分类-TextCNN模型</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-BILSTM%E6%A8%A1%E5%9E%8B.ipynb">文本分类-BILSTM模型</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%8F%A5%E5%AD%90%E7%BC%96%E7%A0%81.ipynb">无监督句子编码(Mean/Max/TFIDF/SIF Pooling)</a></li>
+<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%8F%A5%E5%AD%90%E7%BC%96%E7%A0%81.ipynb">无监督句子编码(Mean/Max/TFIDF/SIF)</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/transformer%E5%9F%BA%E7%A1%80.ipynb">transformer基础</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-cls-example.ipynb">BERT文本分类</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-ner-example.ipynb">BERT实体识别</a></li>
@@ -67,7 +67,7 @@
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-qa-example.ipynb">BERT文本问答</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-choice-example.ipynb">BERT多项选择</a></li>
 <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-mlm-example.ipynb">BERT Mask预训练</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-prompt-cls.ipynb">BERT + Prompt文本分类</a></li>
+<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-prompt-cls.ipynb">BERT + Prompt分类</a></li>
       </ul>
       </td>
       <td>
