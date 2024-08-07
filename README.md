@@ -49,42 +49,50 @@
       <td>
         <b>文本分类（意图识别）</b>
       </td>
+      <td>
+        <b>关键词提取与文本聚类</b>
+      </td>
     </tr>
     <tr valign="top">
       <td>
       <ul>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/NLP-Pytorch%E5%9F%BA%E7%A1%80.ipynb">NLP-Pytorch基础</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E8%8B%B1%E6%96%87%E5%88%86%E7%B1%BB.ipynb">文本分类-FastText模型-英文分类</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E5%88%86%E7%B1%BB.ipynb">文本分类-FastText模型-中文分类</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E8%BF%9B%E9%98%B6.ipynb">文本分类-FastText模型-中文进阶</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-TextCNN%E6%A8%A1%E5%9E%8B.ipynb">文本分类-TextCNN模型</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-BILSTM%E6%A8%A1%E5%9E%8B.ipynb">文本分类-BILSTM模型</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%8F%A5%E5%AD%90%E7%BC%96%E7%A0%81.ipynb">无监督句子编码(Mean/Max/TFIDF/SIF)</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/transformer%E5%9F%BA%E7%A1%80.ipynb">transformer基础</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-cls-example.ipynb">BERT文本分类</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-ner-example.ipynb">BERT实体识别</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-nsp-example.ipynb">BERT文本匹配</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-qa-example.ipynb">BERT文本问答</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-choice-example.ipynb">BERT多项选择</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-mlm-example.ipynb">BERT Mask预训练</a></li>
-<li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-prompt-cls.ipynb">BERT + Prompt分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/NLP-Pytorch%E5%9F%BA%E7%A1%80.ipynb">NLP-Pytorch基础</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E8%8B%B1%E6%96%87%E5%88%86%E7%B1%BB.ipynb">文本分类-FastText模型-英文分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E5%88%86%E7%B1%BB.ipynb">文本分类-FastText模型-中文分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-FastText%E6%A8%A1%E5%9E%8B-%E4%B8%AD%E6%96%87%E8%BF%9B%E9%98%B6.ipynb">文本分类-FastText模型-中文进阶</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-TextCNN%E6%A8%A1%E5%9E%8B.ipynb">文本分类-TextCNN模型</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB-BILSTM%E6%A8%A1%E5%9E%8B.ipynb">文本分类-BILSTM模型</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/%E6%97%A0%E7%9B%91%E7%9D%A3%E5%8F%A5%E5%AD%90%E7%BC%96%E7%A0%81.ipynb">无监督句子编码(Mean/Max/TFIDF/SIF)</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/transformer%E5%9F%BA%E7%A1%80.ipynb">transformer基础</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-cls-example.ipynb">BERT文本分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-ner-example.ipynb">BERT实体识别</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-nsp-example.ipynb">BERT文本匹配</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-qa-example.ipynb">BERT文本问答</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-choice-example.ipynb">BERT多项选择</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-mlm-example.ipynb">BERT Mask预训练</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/bert-prompt-cls.ipynb">BERT + Prompt分类</a></li>
       </ul>
       </td>
       <td>
       <ul>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/01-%E5%AF%B9%E8%AF%9D%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB.ipynb">数据集读取</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/02-%E6%AD%A3%E5%88%99%E5%85%B3%E9%94%AE%E8%AF%8D.ipynb">关键词识别与正则匹配</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/03-TFIDF%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">TFIDF文本分类</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/04-%E8%AF%8D%E5%90%91%E9%87%8F%E8%AE%AD%E7%BB%83%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb">词向量训练与加载</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/05-FastText%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">FastText文本分类</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/06-LSTM%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">LSTM文本分类</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/07-TextCNN%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">TextCNN文本分类</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/08-BERT%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">BERT文本分类</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/09-BERT%E9%AB%98%E6%95%88%E5%BE%AE%E8%B0%83.ipynb">BERT高效微调</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/10-T5%E5%8A%A0%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb">T5加载与使用</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/11-T5%E5%BE%AE%E8%B0%83%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">T5微调与分类</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/12-Qwen%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8A%A0%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb">大模型Qwen加载与使用</a></li>
-    <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/13-Qwen%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">大模型Qwen微调</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/01-%E5%AF%B9%E8%AF%9D%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB.ipynb">数据集读取</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/02-%E6%AD%A3%E5%88%99%E5%85%B3%E9%94%AE%E8%AF%8D.ipynb">关键词识别与正则匹配</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/03-TFIDF%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">TFIDF文本分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/04-%E8%AF%8D%E5%90%91%E9%87%8F%E8%AE%AD%E7%BB%83%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb">词向量训练与加载</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/05-FastText%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">FastText文本分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/06-LSTM%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">LSTM文本分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/07-TextCNN%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">TextCNN文本分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/08-BERT%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">BERT文本分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/09-BERT%E9%AB%98%E6%95%88%E5%BE%AE%E8%B0%83.ipynb">BERT高效微调</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/10-T5%E5%8A%A0%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb">T5加载与使用</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/11-T5%E5%BE%AE%E8%B0%83%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">T5微调与分类</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/12-Qwen%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%8A%A0%E8%BD%BD%E4%B8%8E%E4%BD%BF%E7%94%A8.ipynb">大模型Qwen加载与使用</a></li>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/Coggle202405%E6%84%8F%E5%9B%BE%E8%AF%86%E5%88%AB/13-Qwen%E5%A4%A7%E6%A8%A1%E5%9E%8B%E5%BE%AE%E8%B0%83%E6%96%87%E6%9C%AC%E5%88%86%E7%B1%BB.ipynb">大模型Qwen微调</a></li>
+      </ul>
+      </td>
+      <td>
+      <ul>
+        <li><a href="https://github.com/coggle-club/notebooks/blob/main/notebooks/nlp/KeyBERT%E6%95%99%E7%A8%8B.ipynb">KeyBERT</a></li>
       </ul>
       </td>
     </tr>
