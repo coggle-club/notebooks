@@ -102,6 +102,37 @@
 </table>
 
 
+<div align="center">
+  <b>Dify应用案例</b>
+</div>
+<table align="center">
+  <tbody>
+    <tr align="center" valign="bottom">
+      <td>
+        <b>应用案例</b>
+      </td>
+      <td>
+        <b>应用案例</b>
+      </td>
+    </tr>
+    <tr valign="top">
+      <td>
+      <ul>
+<li><a href="https://github.com/coggle-club/notebooks/blob/main/dify/dsl/%E5%BA%94%E7%94%A8-%E4%BA%94%E9%99%A9%E4%B8%80%E9%87%91%E8%AE%A1%E7%AE%97%E5%99%A8.yml">五险一金计算器</a></li>
+<li><a href="https://github.com/coggle-club/notebooks/blob/main/dify/dsl/%E5%BA%94%E7%94%A8-%E4%BD%93%E8%84%82%E5%81%A5%E5%BA%B7%E5%BB%BA%E8%AE%AE.yml">体脂健康建议</a></li>
+      </ul>
+      </td>
+      <td>
+      <ul>
+<li><a href="https://github.com/coggle-club/notebooks/blob/main/dify/dsl/%E5%BA%94%E7%94%A8-%E6%96%87%E7%8C%AE%E6%A0%BC%E5%BC%8F%E8%BD%AC%E6%8D%A2.yml">文献格式转换</a></li>
+<li><a href="https://github.com/coggle-club/notebooks/blob/main/dify/dsl/%E5%BA%94%E7%94%A8-%E6%99%BA%E8%83%BD%E7%BF%BB%E8%AF%91.yml">智能翻译</a></li>
+      </ul>
+      </td>
+    </tr>
+</td>
+    </tr>
+  </tbody>
+</table>
 
 
 ### TODO
