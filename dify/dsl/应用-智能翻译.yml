@@ -1,0 +1,311 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: advanced-chat
+  name: 智能翻译
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/tongyi:0.0.26@4f1c4ded3d189719b7dd54e9d4e5b26f724f3632f3dfaa299491b42accc112c8
+kind: app
+version: 0.2.0
+workflow:
+  conversation_variables:
+  - description: ''
+    id: 98cec14a-88d0-48d3-a618-f73b7e66e6fe
+    name: lang
+    selector:
+    - conversation
+    - lang
+    value: ''
+    value_type: string
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: 请选择你要翻译的目标语言
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions:
+    - 英文
+    - 德语
+    - 西班牙语
+    - 阿拉伯语
+    suggested_questions_after_answer:
+      enabled: true
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: if-else
+      id: 1750086445154-source-1750086641714-target
+      source: '1750086445154'
+      sourceHandle: source
+      target: '1750086641714'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: assigner
+      id: 1750086641714-true-1750086610014-target
+      source: '1750086641714'
+      sourceHandle: 'true'
+      target: '1750086610014'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: if-else
+        targetType: llm
+      id: 1750086641714-false-llm-target
+      source: '1750086641714'
+      sourceHandle: 'false'
+      target: llm
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: llm-source-answer-target
+      source: llm
+      sourceHandle: source
+      target: answer
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: assigner
+        targetType: answer
+      id: 1750086610014-source-1750086826187-target
+      source: '1750086610014'
+      sourceHandle: source
+      target: '1750086826187'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables: []
+      height: 54
+      id: '1750086445154'
+      position:
+        x: 33
+        y: 589
+      positionAbsolute:
+        x: 33
+        y: 589
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        memory:
+          query_prompt_template: '{{#sys.query#}}'
+          role_prefix:
+            assistant: ''
+            user: ''
+          window:
+            enabled: false
+            size: 10
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen3-8b
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: f349d42f-4e7d-48ea-983e-bc68462141a4
+          role: system
+          text: 你是一个文本翻译助手
+        - id: 06cbe706-f9cf-4503-a119-bc6d3666dccb
+          role: user
+          text: '请将用户的文本翻译为{{#conversation.lang#}}的文本。
+
+
+            用户输入：{{#sys.query#}}
+
+            目标语言：{{#conversation.lang#}}
+
+            '
+        selected: true
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: llm
+      position:
+        x: 800
+        y: 693
+      positionAbsolute:
+        x: 800
+        y: 693
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '这是一个{{#conversation.lang#}}翻译助手。
+
+
+          原始输入：{{#sys.query#}}
+
+
+          翻译为：{{#llm.text#}}'
+        desc: ''
+        selected: false
+        title: 直接回复
+        type: answer
+        variables: []
+      height: 142
+      id: answer
+      position:
+        x: 1156
+        y: 686
+      positionAbsolute:
+        x: 1156
+        y: 686
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        items:
+        - input_type: variable
+          operation: over-write
+          value:
+          - sys
+          - query
+          variable_selector:
+          - conversation
+          - lang
+          write_mode: over-write
+        selected: false
+        title: 变量赋值
+        type: assigner
+        version: '2'
+      height: 88
+      id: '1750086610014'
+      position:
+        x: 773
+        y: 538
+      positionAbsolute:
+        x: 773
+        y: 538
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        cases:
+        - case_id: 'true'
+          conditions:
+          - comparison_operator: empty
+            id: 52a52c15-c326-4c8e-90d7-706686a67a06
+            value: ''
+            varType: string
+            variable_selector:
+            - conversation
+            - lang
+          id: 'true'
+          logical_operator: and
+        desc: ''
+        selected: false
+        title: 条件分支
+        type: if-else
+      height: 126
+      id: '1750086641714'
+      position:
+        x: 368
+        y: 481
+      positionAbsolute:
+        x: 368
+        y: 481
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: 接下来我将会让中文翻译为：{{#conversation.lang#}}
+        desc: ''
+        selected: false
+        title: 直接回复 2
+        type: answer
+        variables: []
+      height: 121
+      id: '1750086826187'
+      position:
+        x: 1077
+        y: 538
+      positionAbsolute:
+        x: 1077
+        y: 538
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: -361
+      y: -313.5
+      zoom: 1

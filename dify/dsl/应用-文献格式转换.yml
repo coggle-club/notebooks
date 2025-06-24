@@ -1,0 +1,211 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 应用-文献格式转换
+  use_icon_as_answer_icon: false
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/tongyi:0.0.26@4f1c4ded3d189719b7dd54e9d4e5b26f724f3632f3dfaa299491b42accc112c8
+kind: app
+version: 0.2.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: llm
+      id: 1750251458320-source-1750251769069-target
+      source: '1750251458320'
+      sourceHandle: source
+      target: '1750251769069'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: end
+      id: 1750251769069-source-1750251852085-target
+      source: '1750251769069'
+      sourceHandle: source
+      target: '1750251852085'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - label: 原始格式
+          max_length: 480
+          options: []
+          required: true
+          type: paragraph
+          variable: raw_reference
+      height: 90
+      id: '1750251458320'
+      position:
+        x: 80
+        y: 282
+      positionAbsolute:
+        x: 80
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: false
+          variable_selector: []
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: qwen2.5-32b-instruct
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: e55dfd30-78ba-4b80-8d33-d0661cbaf451
+          role: system
+          text: '你是一个学术专家，擅长理解学术文献。
+
+
+            将给定的论文转换为如下的引用格式：
+
+
+            - 图书
+
+            作者. 普通图书名: 其他书名信息[普通图书标志/文献载体标识]. 其他责任者. 版本项. 出版地: 出版者, 出版年: 引文页码. 获取和访问路径.
+
+
+            - 学位论文
+
+            作者. 学位论文名[D]. 保存地点: 保存单位, 年份. 获取和访问路径.
+
+
+            - 会议论文
+
+            作者. 会议文集名：会议文集其他信息[C]. 出版地：出版者，出版年. 获取和访问路径.
+
+
+            - 技术报告
+
+            作者. 报告名[R]. 报告地：报告单位，报告年. 获取和访问路径.
+
+
+            - 标准报告
+
+            作者. 标准名: 标准编号[S]. 出版地：出版者，出版年. 获取和访问路径.
+
+
+            - 专利
+
+            专利申请者或所有者. 专利题名: 专利国别, 专利号[文献类型标志/文献载体标识]. 公告日期或公开日期[引用日期]. 获取和访问路径. 数字对象唯一标识符.'
+        - id: 90940114-c445-45c6-bef6-d0d8e33fbe0f
+          role: user
+          text: '给定的信息：{{#1750251458320.raw_reference#}}
+
+
+            请输出转换后的引用方式，不需要的额外的输出'
+        selected: false
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1750251769069'
+      position:
+        x: 383
+        y: 282
+      positionAbsolute:
+        x: 383
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1750251769069'
+          - text
+          variable: reference
+        selected: false
+        title: 结束
+        type: end
+      height: 90
+      id: '1750251852085'
+      position:
+        x: 688
+        y: 282
+      positionAbsolute:
+        x: 688
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 11
+      y: -3
+      zoom: 1

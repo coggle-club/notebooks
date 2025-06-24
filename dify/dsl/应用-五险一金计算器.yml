@@ -1,0 +1,227 @@
+app:
+  description: ''
+  icon: 🤖
+  icon_background: '#FFEAD5'
+  mode: workflow
+  name: 应用-五险一金计算器
+  use_icon_as_answer_icon: false
+dependencies: []
+kind: app
+version: 0.2.0
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: code
+      id: 1750252528986-source-1750252558616-target
+      source: '1750252528986'
+      sourceHandle: source
+      target: '1750252558616'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: code
+        targetType: end
+      id: 1750252558616-source-1750253515890-target
+      source: '1750252558616'
+      sourceHandle: source
+      target: '1750253515890'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables:
+        - label: 税前工资
+          max_length: 48
+          options: []
+          required: true
+          type: number
+          variable: salary
+      height: 90
+      id: '1750252528986'
+      position:
+        x: 79
+        y: 282
+      positionAbsolute:
+        x: 79
+        y: 282
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        code: "import json\n\ndef main(salary: int) -> dict:\n    # 计算各项保险和公积金（个人部分）\n\
+          \    pension_individual = salary * 0.08\n    medical_individual = salary\
+          \ * 0.02 + 3\n    unemployment_individual = salary * 0.002\n    housing_individual\
+          \ = salary * 0.12\n    \n    # 计算各项保险和公积金（单位部分）\n    pension_company = salary\
+          \ * 0.20\n    medical_company = salary * 0.10\n    unemployment_company\
+          \ = salary * 0.01\n    injury_company = salary * 0.01\n    maternity_company\
+          \ = salary * 0.008\n    housing_company = salary * 0.12\n    \n    # 计算小计和合计\n\
+          \    individual_subtotal = pension_individual + medical_individual + unemployment_individual\
+          \ + housing_individual\n    company_subtotal = pension_company + medical_company\
+          \ + unemployment_company + injury_company + maternity_company + housing_company\n\
+          \    \n    # 组织数据\n    data = {\n        \"individual\": {\n           \
+          \ \"names\": [\"养老保险\", \"医疗保险\", \"失业保险\", \"公积金\", \"到手工资\"],\n      \
+          \      \"values\": [\n                round(pension_individual, 2),\n  \
+          \              round(medical_individual, 2),\n                round(unemployment_individual,\
+          \ 2),\n                round(housing_individual, 2),\n                round(salary\
+          \ - individual_subtotal, 2)\n            ]\n        },\n        \"company\"\
+          : {\n            \"names\": [\"养老保险\", \"医疗保险\", \"失业保险\", \"工伤保险\", \"\
+          生育保险\", \"公积金\"],\n            \"values\": [\n                round(pension_company,\
+          \ 2),\n                round(medical_company, 2),\n                round(unemployment_company,\
+          \ 2),\n                round(injury_company, 2),\n                round(maternity_company,\
+          \ 2),\n                round(housing_company, 2)\n            ]\n      \
+          \  }\n    }\n\n    # ECharts配置\n    echarts_config = {\n        \"color\"\
+          : ['#5470C6', '#91CC75', '#FAC858', '#EE6666', '#73C0DE', '#3BA272'],\n\
+          \        \"title\": {\n            \"text\": f\"五险一金缴纳分析（基数: {salary}元）\"\
+          ,\n            \"subtext\": \"个人部分（饼图） | 单位部分（柱状图）\",\n            \"left\"\
+          : \"center\",\n            \"textStyle\": {\"fontSize\": 16}\n        },\n\
+          \        \"tooltip\": {\n            \"trigger\": \"item\",\n          \
+          \  \"formatter\": \"{a} <br/>{b}: {c}元 ({d}%)\"\n        },\n        \"\
+          legend\": {\n            \"data\": [\"个人缴纳\", \"单位缴纳\"],\n            \"\
+          bottom\": 10\n        },\n        \"grid\": [\n            {\"right\": \"\
+          52%\", \"top\": \"15%\", \"bottom\": \"15%\"},  # 饼图区域\n            {\"\
+          left\": \"52%\", \"top\": \"15%\", \"bottom\": \"15%\"}   # 柱状图区域\n    \
+          \    ],\n        \"xAxis\": [\n            {\"show\": False},  # 饼图不需要x轴\n\
+          \            {\n                \"type\": \"category\",\n              \
+          \  \"gridIndex\": 1,\n                \"data\": data[\"company\"][\"names\"\
+          ],\n                \"axisLabel\": {\n                    \"interval\":\
+          \ 0,\n                    \"rotate\": 30,\n                    \"fontSize\"\
+          : 10\n                }\n            }\n        ],\n        \"yAxis\": [\n\
+          \            {\"show\": False},  # 饼图不需要y轴\n            {\n            \
+          \    \"type\": \"value\",\n                \"gridIndex\": 1,\n         \
+          \       \"name\": \"金额（元）\",\n                \"axisLabel\": {\"formatter\"\
+          : \"{value}\"}\n            }\n        ],\n        \"series\": [\n     \
+          \       # 个人缴纳饼图\n            {\n                \"name\": \"个人缴纳\",\n \
+          \               \"type\": \"pie\",\n                \"radius\": [\"40%\"\
+          , \"65%\"],\n                \"center\": [\"25%\", \"50%\"],\n         \
+          \       \"data\": [\n                    {\"value\": v, \"name\": n} for\
+          \ n, v in zip(data[\"individual\"][\"names\"], data[\"individual\"][\"values\"\
+          ])\n                ],\n                \"label\": {\n                 \
+          \   \"formatter\": \"{b}: {c}元\",\n                    \"fontSize\": 10\n\
+          \                },\n                \"emphasis\": {\n                 \
+          \   \"itemStyle\": {\"shadowBlur\": 10}\n                }\n           \
+          \ },\n            # 单位缴纳柱状图\n            {\n                \"name\": \"\
+          单位缴纳\",\n                \"type\": \"bar\",\n                \"xAxisIndex\"\
+          : 1,\n                \"yAxisIndex\": 1,\n                \"data\": [\n\
+          \                    {\"value\": v, \"itemStyle\": {\"color\": color}} \n\
+          \                    for v, color in zip(data[\"company\"][\"values\"],\
+          \ [\n                        '#5470C6', '#91CC75', '#FAC858', '#EE6666',\
+          \ '#73C0DE', '#3BA272'\n                    ])\n                ],\n   \
+          \             \"barWidth\": \"60%\",\n                \"label\": {\n   \
+          \                 \"show\": True,\n                    \"position\": \"\
+          top\",\n                    \"formatter\": \"{c}元\",\n                 \
+          \   \"fontSize\": 10\n                }\n            }\n        ]\n    }\n\
+          \n    # 返回格式化输出\n    return {\n        \"output\": \"```echarts\\n\" + json.dumps(echarts_config,\
+          \ indent=2, ensure_ascii=False) + \"\\n```\"\n    }"
+        code_language: python3
+        desc: ''
+        outputs:
+          output:
+            children: null
+            type: string
+        selected: false
+        title: 代码执行
+        type: code
+        variables:
+        - value_selector:
+          - '1750252528986'
+          - salary
+          variable: salary
+      height: 54
+      id: '1750252558616'
+      position:
+        x: 375
+        y: 282
+      positionAbsolute:
+        x: 375
+        y: 282
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        desc: ''
+        outputs:
+        - value_selector:
+          - '1750252558616'
+          - output
+          variable: output
+        selected: false
+        title: 结束
+        type: end
+      height: 90
+      id: '1750253515890'
+      position:
+        x: 654
+        y: 264
+      positionAbsolute:
+        x: 654
+        y: 264
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 299
+      y: 41.5
+      zoom: 1
